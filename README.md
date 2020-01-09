@@ -25,7 +25,9 @@
       * 단축키:F4, UI Explorer > UI 
 2. Vision
       * 쿠다ML(무료)
-3. click image property
+3. 엘리멘트 쪼개기 click image property
       * Cursorposition > BottonRight
 4. 핫키 반복하기
       * String.Join("", Enumerable.Repeat("[d(alt)] [u(alt)]",20))
+5. 병렬 실행
+      * Pick(Pick Brunch)
