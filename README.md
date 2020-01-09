@@ -22,3 +22,6 @@
     *String.join
 
 # RPA 2Day
+
+1. select
+      * 단축키:F4, UI Explorer > UI 
