@@ -14,14 +14,14 @@
 
 1. 기능
     * 글로벌 핸들러 : 에러 핸들러
-    * ControlChars.NewLine
-    * String.join
+    * 줄바꿈 : ControlChars,  Environment.NewLine
+    * 문자열 연결 : String.join
     * Computer Vision = Image
     * VDI 제어 = Runtime 설치(Windows Remote Desktop 설치) / 패키지 설치
 
 # RPA 2Day
 
-1. select
+1. select(Element 가 안잡힐 때)
       * 단축키:F4, UI Explorer > UI 
 2. Vision
       * 쿠다ML(무료)
@@ -35,14 +35,13 @@
 
 # RPA 3Day
 
-1. 화면이 바뀔때 무조껀 find element 를 사용한다
+1. 화면 변환시 find element 사용
 
-2. anchor base의 anchor의 위치를 정확히 명시해야한다
+2. anchor base의 anchor의 위치를 정확히 명시
 
-3. 메일 발송시 body의 내용은 보통 텍스트 파일로 와꾸를 만들어놓고 파라메터에 의해 변해야 하는 경우 {0} 등으로 중괄호로 채워넣은 후 string.format(텍스트 string, 변수, 변수) 로 처리한다.
+3. 메일 body : string.format(텍스트 string, 변수, 변수)
 
-4. type into 클릭등은 엘리먼트를 찾으면 찾았다고 인지하여 시그널을 보내는데, 마우스 커서가 가기전의 경우에 시그널이 날라가서 텍스트가 정상적으로 들어가지 않을 수 도 있음
- - 이럴경우 click before typing을 체크해주고,  Find element 엑티비티를 써주고 waitvisible, waitactive 을 쓰면 좀더 안정적이다.
+4. type into : click before typing 체크, Find element 엑티비티 사용 waitvisible, waitactive 사용
  
 5. Library
       * New Project > Library > 코딩후 > Publish(Orchestrator 없다면 로컬PC)
